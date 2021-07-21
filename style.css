@@ -37,7 +37,7 @@ nav {
 nav ul {
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	min-height: 100vh;
 	position: absolute;
 }
 
@@ -98,6 +98,7 @@ main {
 	margin-left: 8rem;
 	font-size: 1.6rem;
 	color: rgb(124, 124, 124);
+	min-height: 100vh;
 }
 
 main h2 {
