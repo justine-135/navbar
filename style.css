@@ -1,0 +1,156 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: "Heebo", sans-serif;
+}
+
+body::-webkit-scrollbar {
+	width: 0.7rem;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #d55534;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: #383838;
+}
+
+.main-container {
+	background-color: #242424;
+}
+
+nav {
+	background-color: #383838;
+	height: 100vh;
+	width: 6rem;
+	position: fixed;
+	transition: 200ms ease;
+	left: 0;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	position: absolute;
+}
+
+ul li {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	height: 5rem;
+	margin: 1rem 0rem;
+	cursor: pointer;
+}
+
+svg {
+	height: 50px;
+	width: 50px;
+	padding-left: 1rem;
+}
+
+nav:hover button {
+	display: block;
+}
+
+nav:hover {
+	width: 22rem;
+}
+
+nav:hover .first-li {
+	width: 22rem;
+}
+
+.first-li svg {
+	transform: rotate(0deg);
+	transition: 200ms ease;
+}
+
+nav:hover .first-li svg {
+	transform: rotate(540deg);
+}
+
+button {
+	font-family: "Heebo", sans-serif;
+
+	text-decoration: none;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	display: none;
+	transition: 200ms;
+	padding-left: 5rem;
+	color: rgb(124, 124, 124);
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+main {
+	padding-top: 1rem;
+	padding-right: 1rem;
+	margin-left: 8rem;
+	font-size: 1.6rem;
+	color: rgb(124, 124, 124);
+}
+
+main h2 {
+	text-transform: uppercase;
+	font-size: 6.4rem;
+	padding: 1rem 0rem;
+	color: #d55534;
+}
+
+main p {
+	line-height: 3rem;
+}
+
+ul li:last-child {
+	margin-top: auto;
+}
+
+.first-li {
+	height: 10rem;
+	font-weight: 700;
+	background-color: rgb(29, 29, 29);
+	width: 6rem;
+	transition: 200ms ease;
+	pointer-events: none;
+}
+
+.first-li button {
+	font-size: 3.2rem;
+
+	padding-left: 2rem;
+}
+
+ul li:hover button {
+	color: #d55534;
+}
+
+ul li:hover svg path {
+	fill: #d55534;
+}
+
+ul li:hover {
+	background-color: #242424;
+}
+
+@media only screen and (max-width: 600px) {
+	.first-li {
+		display: none;
+	}
+	nav {
+		pointer-events: none;
+	}
+
+	ul li {
+		margin: auto;
+	}
+}
