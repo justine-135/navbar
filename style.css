@@ -196,7 +196,7 @@ ul li:hover {
 .first-toggle {
 	background-color: rgb(185, 184, 184);
 }
-@media only screen and (max-width: 600px) and (hover: hover) and (pointer: fine) {
+@media only screen and (max-width: 768px) and (hover: hover) and (pointer: fine) {
 	.first-li {
 		display: none;
 	}
