@@ -100,7 +100,6 @@ a {
 
 main {
 	margin-left: 6rem;
-	scroll-snap-type: y mandatory;
 	overflow-y: scroll;
 	height: 100vh;
 	scroll-behavior: smooth;
@@ -196,7 +195,7 @@ ul li:hover {
 .first-toggle {
 	background-color: rgb(185, 184, 184);
 }
-@media only screen and (max-width: 768px) and (hover: hover) and (pointer: fine) {
+@media only screen and (max-width: 768px) {
 	.first-li {
 		display: none;
 	}
@@ -207,5 +206,16 @@ ul li:hover {
 
 	svg path:focus {
 		background-color: red;
+	}
+
+	nav:hover a {
+		display: none;
+	}
+
+	nav:hover {
+		width: 6rem;
+	}
+	ul li:hover {
+		background-color: transparent;
 	}
 }
